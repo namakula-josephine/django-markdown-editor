@@ -30,4 +30,6 @@ blocks:
           - python manage.py test
       jobs:
         - name: 'Job #1'
-          commands: []
+          commands:
+            - cd martor_demo
+            - python manage.py check --deploy
